@@ -43,10 +43,7 @@ public class UseItem implements Listener {
     }
 
     private void doUseItem(Player player, Player target) {
-        if (target.hasPermission("PlayerScanner.immune")) {
-            player.sendMessage(ChatColor.AQUA + "You feel as though you can't make out who this is.");
-        } else {
-            player.sendMessage(ChatColor.AQUA + "You feel as though this is probably " + target.getDisplayName() + ".");
-        }
+        ChatColor nameColor = target.hasPermission("PlayerScanner.immune") ? ChatColor.MAGIC : ChatColor.AQUA;
+        player.sendMessage(ChatColor.AQUA + "You feel as though this is probably " + nameColor + target.getDisplayName() + ChatColor.AQUA + ".");
     }
 }
