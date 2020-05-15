@@ -1,0 +1,17 @@
+name: PlayerScanner
+version: @version@
+main: com.app.playerscanner.playerscanner.PlayerScanner
+api-version: 1.13
+
+commands:
+  giveScanner:
+    description: Gives a Player Indentifier item to the specified player
+    permission: PlayerScanner.giveScanner
+    permission-message: No <permission> permission
+    usage: /<command> PLAYER to give the specified player a Player Indentifier
+
+permissions:
+  giveScanner:
+    description: Allow use of the /giveScanner command
+  immune:
+    description: Makes a player immune to the effects of the player scanner
