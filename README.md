@@ -5,4 +5,4 @@
   
 ### Permissions
 - PlayerScanner.giveScanner  -- allow use of the /giveScanner command
-- PlayerScanner.immune -- grant immunity to the affects of the scanning device
+- PlayerScanner.immune -- grant immunity to the effects of the scanning device
